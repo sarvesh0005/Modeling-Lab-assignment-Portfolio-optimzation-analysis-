@@ -155,8 +155,7 @@ For visualization, every asset was rebased to 100 on the first
 observation:
 
 $$
-P_{t,\text{normalized}}
-=
+P_{t,\text{normalized}} =
 \frac{P_t}{P_0}\times100
 $$
 
@@ -185,16 +184,14 @@ $$
 Simple daily returns were calculated as:
 
 $$
-R_t
-=
+R_t=
 \frac{P_t-P_{t-1}}{P_{t-1}}
 $$
 
 equivalently,
 
 $$
-R_t
-=
+R_t=
 \frac{P_t}{P_{t-1}}-1
 $$
 
@@ -213,15 +210,13 @@ rather than treating every asset independently.
 Daily mean and standard deviation were estimated:
 
 $$
-\bar{R}_i
-=
+\bar{R}_i=
 \frac{1}{T}
 \sum_{t=1}^{T}R_{i,t}
 $$
 
 $$
-\sigma_i
-=
+\sigma_i=
 \sqrt{
 \frac{1}{T-1}
 \sum_{t=1}^{T}
@@ -232,16 +227,14 @@ $$
 For a simple annualization convention of 252 trading days:
 
 $$
-\mu_i^{annual}
-=
+\mu_i^{annual}=
 252\bar{R}_i
 $$
 
 and
 
 $$
-\sigma_i^{annual}
-=
+\sigma_i^{annual}=
 \sqrt{252}\sigma_i
 $$
 
@@ -273,8 +266,7 @@ highest estimated volatility in this sample.
 The correlation matrix was calculated from daily returns:
 
 $$
-\rho_{ij}
-=
+\rho_{ij}=
 \frac{
 \operatorname{Cov}(R_i,R_j)
 }{
@@ -304,16 +296,14 @@ volatility than the weighted average of individual volatilities.
 The daily covariance matrix was estimated as:
 
 $$
-\Sigma_{ij}
-=
+\Sigma_{ij}=
 \operatorname{Cov}(R_i,R_j)
 $$
 
 The annualized covariance matrix was obtained using:
 
 $$
-\Sigma_{annual}
-=
+\Sigma_{annual}=
 252\Sigma_{daily}
 $$
 
